@@ -1,12 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-
-export type ProductDto = {
-  _id: string;
-  image_url: string;
-  name: string;
-  value: string;
-};
+import { ProductDto } from "../../interfaces/product.dto";
 
 export default function handler(
   req: NextApiRequest,
